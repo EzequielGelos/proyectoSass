@@ -50,6 +50,9 @@ body{
     margin-left: 5vw;
 }
 
+.nav span:hover{
+    transform: scale(1.2);
+}
 .nav > ul{
     display: flex;
     list-style-type: none;
@@ -61,6 +64,9 @@ body{
     font-weight: 500;
     color: rgb(209, 209, 209);
 }
+.nav ul li a:hover{
+    background-color: rgb(124, 123, 123); ;
+}
 
 .nav > ul > li > a{
     text-decoration: none;
@@ -68,6 +74,7 @@ body{
     font-weight: 1000;
     font-size: 1.4rem;
 }
+
 
 /* SubMenu */
 .subMenu{
@@ -218,8 +225,12 @@ body{
     justify-items: center;
     margin: 1rem;
 }
-
-
+.productoBlanco:hover{
+    transform: scale(1.1);
+}
+.productoNegro:hover{
+    transform: scale(1.1);
+}
 .productoNegro{
     display: grid;
     justify-items: center;
