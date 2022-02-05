@@ -14,10 +14,11 @@ body{
     min-height: 100vh;
     grid-template-areas:
     "nav nav"
+    "carrusel carrusel"
     "imagenes imagenes"
     "contenido contenido"
     "footer footer";
-    grid-template-rows: 1.5fr 3fr 2fr 1fr;
+    grid-template-rows: 0.80fr 2fr 2fr 2fr 2fr;
 }
 /* MENU/LOGO */
 .nav{
@@ -101,6 +102,16 @@ body{
 .nav li:hover .subMenu{
     display: block;
 }
+/* CARRUSEL */
+.containerCarrusel{
+    grid-area: carrusel;
+    
+}
+.imagenesProductosUno{
+    width: 35rem;
+    height: 35rem;
+}
+
 /*  IMAGENES */
 .imagenes{
     grid-area: imagenes;
@@ -183,7 +194,7 @@ body{
     "producto producto"
     "stock stock"
     "footer footer";
-    grid-template-rows: 1.5fr 1fr 2fr 2fr 1fr;
+    grid-template-rows: 1fr 1fr 2fr 1fr 2fr;
 }
 .nav{
     grid-area: nav;
@@ -246,6 +257,7 @@ body{
 .stockPadre{
     grid-area: stock;
     margin-top: 5rem;
+    border: 1px white solid;
 
 }
 form fieldset{
@@ -435,6 +447,9 @@ form fieldset legend{
 .faqsContainer{
     grid-area: pregunta1;
 }
+.containerFaqs h2{
+    font-size: 6.5rem;
+}
 .faqsPregunta{
     text-align: center;
     font-size: 3rem;
@@ -471,12 +486,12 @@ form fieldset legend{
 }
 
 /* mediaqueries celular */
-@media screen and (max-width:390px){
+@media screen and (max-width:460px){
     /* menu/ index mediaqueries  */
     .nav{
         flex-direction: column;
         justify-content: space-evenly;
-        align-items: center;
+        align-content: center;
     }
     .nav > ul{
         width: 100%;
@@ -518,61 +533,64 @@ form fieldset legend{
     width: 90%;
     margin-left: 1rem;    
 }
-.aboutUsUno p span{
+    .aboutUsUno p span{
     font-size: 1.2rem;
 }
-.prendas h3{
+    .prendas h3{
     font-size: 3.5rem;
 }
-.prendas p{
+    .prendas p{
     font-size: 1.5rem;
     text-align: center;
     font-weight: 600 ;
     width: 90%;
     margin: 1rem;    
 }
-.tabla h3{
+    .tabla h3{
     font-size: 3.5rem;
 }
-.tabla img{
+    .tabla img{
     width: 80%;
     height: 80%;
 }
 /* PRODUCTOS MEDIAQUERIES */
-.containerProductos h2{
-    font-size: 4rem;
-}
-.stockPadre{
-    width: 90%;
-    display: flex;
-    justify-self: center;
-}
-/* LOCALES MEDIAQUERIES */
-.tituloLocales h2{
-    font-size: 4.5rem;
-}
-.localUno p{
-    font-size: 2.8rem;
-}
-/* FAQS MEDIAQUERIES */
-.faqs h2{
-    font-size: 5.5rem;
-}
-.faqsPregunta{
-    font-size: 3.5rem;
-    font-style: italic;
-}
-.faqsUno{
-    font-size: 0.5rem;
-}
-.faqsPolicy{
-    font-size: 5rem;
-    font-style: italic;
-}
-.faqsParrafo{
-    font-size: 0.5rem;
-}
-}
+    .containerProductos h2{
+        font-size: 4rem;
+    }
+    .stockPadre{
+            width: 50%;
+            display: flex;
+            justify-self: center;
+    }
+    .containerProductos h2{
+        text-align: center;
+    }
+    /* LOCALES MEDIAQUERIES */
+    .tituloLocales h2{
+        font-size: 4.5rem;
+    }
+    .localUno p{
+        font-size: 2.8rem;
+    }
+    /* FAQS MEDIAQUERIES */
+    .faqs h2{
+        font-size: 5.5rem;
+    }
+    .faqsPregunta{
+        font-size: 3.5rem;
+        font-style: italic;
+    }
+    .faqsUno{
+        font-size: 0.5rem;
+    }
+    .faqsPolicy{
+        font-size: 5rem;
+        font-style: italic;
+    }
+    .faqsParrafo{
+        font-size: 0.5rem;
+    }
+    }
 /* mediaqueries tablet */
 
 @media screen and (max-width:600px){
@@ -604,6 +622,10 @@ form fieldset legend{
             width: 50%;
             display: flex;
             justify-self: center;
+        }
+        .rowProductos{
+            flex-direction: column;
+            align-items: center;
         }
     /* NOSOTROS MEDIAQUERIE */
         .aboutUs{
@@ -644,8 +666,8 @@ form fieldset legend{
                 font-size: 2rem;
             }
             /* FAQS MEDIAQUERIE */
-            .containerFaqs h2{
-                font-size: 6.5rem;
+            .faqs h2{
+                font-size: 8rem;
                 font-style: italic;
             }
             .faqsPregunta{
