@@ -1,0 +1,53 @@
+/*grid de index */
+.container{
+    display: grid;
+    min-height: 100vh;
+    grid-template-areas:
+    "nav nav"
+    "carrusel carrusel"
+    "imagenes imagenes"
+    "contenido contenido"
+    "footer footer";
+    grid-template-rows: 0.80fr 2fr 2fr 2fr 2fr;
+}
+
+/* CARRUSEL */
+.containerCarrusel{
+    grid-area: carrusel;
+}
+.carousel-item{
+    .imagenesProductosUno{
+        width: 35rem;
+        height: 35rem;
+    }
+}
+/*  IMAGENES */
+.imagenes{
+    grid-area: imagenes;
+    display: flex;
+    justify-self: center;
+    img{
+        width: 50%;
+        height: 60%;
+}
+}
+
+/* CONTENIDO */
+.contenido{
+    grid-area: contenido;
+    p{
+        text-align: center;
+        font-size: 1rem;
+        font-weight: 800;
+        color: rgb(209, 209, 209);
+    }
+    .video{
+        display: flex;
+        justify-content: center;
+        margin-top: 2rem;
+        video{
+            width: 40rem ;
+            height: 20rem;
+        }
+    }
+}

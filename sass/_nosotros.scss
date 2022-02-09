@@ -1,0 +1,66 @@
+.containerNosotros{
+    display: grid;
+    grid-template-areas: 
+    "nav nav"
+    "about about"
+    "prendas prendas"
+    "tabla tabla"
+    "footer footer";
+    grid-template-rows:  1.3fr 1fr 1.5fr 2fr 1fr;
+
+    .aboutUsUno{
+        grid-area: about;
+        p{
+            text-align: center;
+            font-size: 1.5rem;
+            color: rgb(209, 209, 209);
+        }
+        h2{
+            text-align: center;
+            font-size: 4.5rem;
+            font-weight: 1000;
+            color: rgb(209, 209, 209);
+            font-style: italic;
+        }
+        p{
+            span{
+                font-size: 1.5rem;
+                font-weight: bolder;
+            }
+        }
+    }
+    /* NUESTRAS PRENDAS */
+.prendas{
+    grid-area: prendas;
+    h3{
+        text-align: center;
+        font-size: 3rem;
+        font-weight: 1000;
+        color: rgb(209, 209, 209);
+        font-style: italic;
+    }
+    p{
+        text-align: center;
+        font-size: 2rem;
+        color: rgb(209, 209, 209);
+    }
+}
+/* TABLA DE TALLES */
+.tabla{
+    grid-area: tabla;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    h3{
+        text-align: center;
+        font-size: 3.2rem;
+        font-weight: 1000;
+        color: rgb(209, 209, 209);
+        font-style: italic;
+    }
+    img{
+        width: 40%;
+        height: 50%;
+    }
+}
+}

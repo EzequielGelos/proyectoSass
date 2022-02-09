@@ -1,0 +1,56 @@
+/* FAQS */
+.containerFaqs{
+    display: grid;
+    grid-template-areas: 
+    "nav nav"
+    "titulo titulo"
+    "pregunta1 pregunta1"
+    "pregunta2 pregunta2"
+    "footer footer";
+    grid-template-rows: 1.5fr 1fr 2fr 2fr 1fr;
+    .faqs{
+        grid-area: titulo;
+        text-align: center;
+        font-size: 7rem;
+        font-weight: 1000;
+        color: rgb(209, 209, 209);
+        font-style: italic;
+    }
+    h2{
+        font-size: 6.5rem;
+    }
+    .faqsContainer{
+        grid-area: pregunta1;
+        .faqsPregunta{
+            text-align: center;
+            font-size: 3rem;
+            font-weight: 1000;
+            color: rgb(209, 209, 209);
+            margin-bottom: 2rem;
+            font-style: italic;
+        }
+        .faqsUno{
+            text-align: center;
+            font-size: 1.2rem;
+            font-weight: 1000;
+            color: rgb(209, 209, 209);
+        }
+    }
+    .faqsDos{
+        grid-area: pregunta2;
+        .faqsPolicy{
+            text-align: center;
+            font-size: 3.2rem;
+            font-weight: 1000;
+            color: rgb(209, 209, 209);
+            margin-bottom: 2rem;
+            font-style: italic;
+        }
+        .faqsParrafo{
+            text-align: center;
+            font-size: 1rem;
+            font-weight: 1000;
+            color: rgb(209, 209, 209);
+        }
+    }
+}

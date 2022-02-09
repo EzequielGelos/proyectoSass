@@ -1,0 +1,67 @@
+/* grid de productos + estilos de fuentes*/
+.containerProductos{
+    min-height: 100vh;
+    display: grid;
+    grid-template-areas: 
+    "nav nav"
+    "h2 h2"
+    "producto producto"
+    "stock stock"
+    "footer footer";
+    grid-template-rows: 1fr 1fr 2fr 1fr 2fr;
+    h2{
+        grid-area: h2;
+        text-align: center;
+        font-size: 3rem;
+        font-weight: bolder;
+        color: rgb(209, 209, 209);
+        font-style: italic;
+    }
+    .productos{
+        grid-area: producto;
+        column-gap: 10rem;
+        display: flex;
+        justify-content: center;
+        margin: 2rem;
+        h4{
+            color: rgb(209, 209, 209);
+            text-align: center;
+            font-size: 1.2rem;
+            font-weight: 1000;
+        }
+        img{
+            width: 10rem;
+            height: 15rem;
+        }
+        p{
+            color: rgb(209, 209, 209);
+            text-align: center;
+            font-size: 1rem;
+            font-weight: 1000;
+        }
+    }
+    /* STOCK  */
+.stockPadre{
+    grid-area: stock;
+    margin-top: 5rem;
+    border: 1px white solid;
+    form{
+        fieldset{
+            color: rgb(209, 209, 209);
+            font-weight: 800;
+            font-size: 2.5rem;
+            .boton{
+                margin: 0.5rem;
+                padding: 1rem;
+            }
+            legend{
+                text-align: center;
+                font-weight: 1000;
+                font-size: 2.2rem;
+            }
+        }
+
+    }
+
+}
+}
